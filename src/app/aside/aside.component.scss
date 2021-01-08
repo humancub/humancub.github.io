@@ -1,0 +1,31 @@
+.aside {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #4d4d4d;
+  justify-content: space-around;
+  height: 100%;
+  width: 98px;
+}
+.logo {
+  padding: 46px 24px 80px 23px;
+}
+
+.navigation {
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+mat-slide-toggle {
+  align-self: center;
+}
+
+.light-theme {
+  background: #fdfdff;
+  border: 1px solid #ebebeb;
+  color: #dfe6f1;
+}
+
+.dark-theme {
+  background: #282c31;
+  color: #cacaca;
+}

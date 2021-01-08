@@ -1,0 +1,30 @@
+<div [ngClass]="['aside', theme === Theme.Dark ? 'dark-theme' : 'light-theme']">
+  <div class="navigation logo">
+    <img src="./assets/logo.svg" alt="" />
+  </div>
+  <div class="navigation home">
+    <mat-icon>home</mat-icon>
+  </div>
+  <div class="navigation task">
+    <mat-icon>assignment</mat-icon>
+  </div>
+  <div class="navigation people">
+    <mat-icon>people</mat-icon>
+  </div>
+  <div class="navigation message">
+    <mat-icon> local_post_office</mat-icon>
+  </div>
+  <div class="navigation play">
+    <mat-icon>play_circle_outline</mat-icon>
+  </div>
+  <div class="navigation stat">
+    <mat-icon>equalizer</mat-icon>
+  </div>
+  <div class="navigation setting">
+    <mat-icon>settings</mat-icon>
+  </div>
+  <mat-slide-toggle
+    (change)="themeToggled($event.checked)"
+    [checked]="true"
+  ></mat-slide-toggle>
+</div>

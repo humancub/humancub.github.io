@@ -1,0 +1,70 @@
+.device-component {
+  display: flex;
+  flex-direction: column;
+  background: #282c31;
+  border: 1px solid #4d4d4d;
+  border-radius: 13px;
+  padding: 22px 10px 22px 23px;
+}
+
+.device-block {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 39px;
+  padding-left: 30px;
+}
+
+.title-device {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.ellipse-device {
+  position: relative;
+}
+
+.ellipse-piece {
+  position: absolute;
+  top: 9px;
+  right: -10px;
+  left: 70px;
+  font-weight: 600px;
+}
+
+.desktop-14 {
+  position: absolute;
+  top: 32px;
+  right: 5px;
+  color: azure;
+  font-weight: 600px;
+  font-size: 16px;
+}
+
+.mobile-86 {
+  position: absolute;
+  left: 20px;
+  top: 60px;
+  color: azure;
+  font-size: 16px;
+}
+
+.characteristics-device {
+  padding-left: 20px;
+}
+
+.span-device {
+  padding-left: 5px;
+}
+
+.light-theme {
+  background: #fdfdff;
+  color: #4f4f4f;
+  border: 1px solid #ebebeb;
+}
+
+.dark-theme {
+  background: #282c31;
+  color: #cacaca;
+}

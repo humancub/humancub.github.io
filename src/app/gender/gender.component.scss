@@ -1,0 +1,41 @@
+.gender-component {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #4d4d4d;
+  border-radius: 13px;
+  padding: 23px 40px 3px 24px;
+}
+
+.info-gender {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-bottom: 30px;
+}
+
+.title-gender {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.genders {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.light-theme {
+  .schedule-gender {
+    color: #eff3f9;
+  }
+  background: #fdfdff;
+  color: #4f4f4f;
+  border: 1px solid #ebebeb;
+}
+
+.dark-theme {
+  background: #282c31;
+  color: #cacaca;
+}

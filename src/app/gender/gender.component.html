@@ -1,0 +1,21 @@
+<div
+  [ngClass]="[
+    'gender-component',
+    theme === Theme.Dark ? 'dark-theme' : 'light-theme'
+  ]"
+>
+  <div class="info-gender">
+    <span class="title-gender">Gender/Age</span>
+    <div class="characters-gender">
+      <img src="./assets/pink.svg" />
+      <span class="genders">women</span>
+      <img src="./assets/purple.svg" />
+      <span class="genders">men</span>
+    </div>
+  </div>
+  <div class="info-gender">
+    <div clas="schedule-gender">
+      <img src="./assets/stat-gender.svg" />
+    </div>
+  </div>
+</div>

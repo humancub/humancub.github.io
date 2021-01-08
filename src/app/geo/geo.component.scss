@@ -1,0 +1,133 @@
+.geo-component {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #4d4d4d;
+  border-radius: 13px;
+  padding: 23px 25px 30px 25px;
+}
+
+.info-geo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+
+.title-geo {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  padding-right: 300px;
+}
+
+.country-geo {
+  padding-right: 5px;
+}
+
+.city-geo {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #979797;
+}
+
+.stat-geo {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: flex-start;
+}
+
+.left-side-geo,
+.right-side-geo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.russia-geo,
+.ukraine-geo,
+.china-geo,
+.usa-geo {
+  margin-bottom: 45px;
+}
+
+.geo-stat {
+  position: relative;
+}
+
+.country-geo {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.percent-country {
+  display: flex;
+  justify-content: space-between;
+}
+
+.percent-geo {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #979797;
+}
+
+.purple {
+  position: absolute;
+  top: 14px;
+  background-color: #7f7fd5;
+  border-radius: 6px;
+}
+
+.gray-strip {
+  position: relative;
+  height: 10px;
+  width: 140px;
+  background-color: #525050;
+  border-radius: 5px;
+}
+
+.strip-russia {
+  height: 10px;
+  width: 128px;
+}
+
+.strip-ukraine-usa {
+  height: 10px;
+  width: 5px;
+}
+
+.strip-mongolia {
+  height: 10px;
+  width: 4px;
+}
+
+.strip-china {
+  height: 10px;
+  width: 13px;
+}
+
+.strip-other {
+  height: 10px;
+  width: 15px;
+}
+
+.light-theme {
+  .gray-strip {
+    background: #eff3f9;
+  }
+  background: #fdfdff;
+  color: #4f4f4f;
+  border: 1px solid #ebebeb;
+}
+
+.dark-theme {
+  background: #282c31;
+  color: #cacaca;
+}

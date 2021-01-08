@@ -1,0 +1,50 @@
+.info-content {
+  display: grid;
+  align-items: center;
+}
+
+.grid-cell {
+  display: flex;
+  border-radius: 13px;
+  border: 1px solid #4d4d4d;
+  padding: 23px 33px 24px 24px;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.info-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 150px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.details-info-block {
+  align-self: flex-end;
+}
+
+.button-info {
+  background-color: #282c31;
+  border: none;
+  color: #cacaca;
+}
+
+.light-theme {
+  .button-info {
+    background: #fdfdff;
+    color: #979797;
+  }
+  background: #fdfdff;
+  color: #4f4f4f;
+  border: 1px solid #ebebeb;
+}
+
+.dark-theme {
+  background: #282c31;
+  color: #cacaca;
+}

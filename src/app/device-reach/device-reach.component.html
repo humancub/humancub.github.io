@@ -1,0 +1,33 @@
+<div
+  [ngClass]="[
+    'device-component',
+    theme === Theme.Dark ? 'dark-theme' : 'light-theme'
+  ]"
+>
+  <div class="device-block">
+    <span class="title-device">Reach by device</span>
+  </div>
+  <div class="device-block">
+    <div class="ellipse-device">
+      <div class="ellipse">
+        <img src="./assets/Ellipse.svg" />
+      </div>
+      <div class="ellipse-piece">
+        <img src="./assets/Ellipse piece.svg" />
+      </div>
+      <div class="mobile-86">86%</div>
+      <div class="desktop-14">14%</div>
+    </div>
+    <div class="characteristics-device">
+      <div class="desktop-device">
+        <img src="./assets/pink.svg" />
+        <span class="span-device">Desktop</span>
+      </div>
+
+      <div class="mobile views-device">
+        <img src="./assets/purple.svg" />
+        <span class="span-device">Mobile views</span>
+      </div>
+    </div>
+  </div>
+</div>

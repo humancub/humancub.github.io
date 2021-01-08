@@ -1,0 +1,66 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 55px;
+}
+
+.title {
+  line-height: 36px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.search {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+  padding-left: 45px;
+  color: #cacaca;
+}
+
+::ng-deep .search {
+  color: #cacaca;
+}
+
+.notification {
+  margin-left: 25px;
+  background: #212427;
+  border: none;
+}
+
+.username {
+  margin-left: 700px;
+  margin-right: 11px;
+
+  size: 20px;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.profile-photo {
+  margin-right: 15px;
+}
+
+.options {
+  background: #212427;
+  border: none;
+  color: #cacaca;
+}
+
+.light-theme {
+  .options {
+    background: #eff3f9;
+  }
+  .notification {
+    background: #eff3f9;
+  }
+
+  background: #eff3f9;
+  color: #4f4f4f;
+}
+
+.dark-theme {
+  background: #212427;
+  color: #cacaca;
+}

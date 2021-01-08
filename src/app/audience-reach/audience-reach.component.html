@@ -1,0 +1,30 @@
+<div
+  [ngClass]="[
+    'audience-component',
+    theme === Theme.Dark ? 'dark-theme' : 'light-theme'
+  ]"
+>
+  <div class="audience-block">
+    <span class="title-audience">Audience reach</span>
+    <mat-form-field class="datepicker" color="accent" appearance="fill">
+      <mat-label>31/01/2021- 31/02/2021</mat-label>
+      <mat-date-range-input [rangePicker]="picker">
+        <input matStartDate placeholder="Start date" />
+        <input matEndDate placeholder="End date" />
+      </mat-date-range-input>
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-date-range-picker #picker></mat-date-range-picker>
+    </mat-form-field>
+
+    <mat-radio-group>
+      <mat-radio-button value="1">Total</mat-radio-button>
+      <mat-radio-button value="2" class="follower-audience"
+        >Follower</mat-radio-button
+      >
+    </mat-radio-group>
+  </div>
+  <div class="audience-block"></div>
+  <div class="stat-audience-reach">
+    <img src="./assets/audience-reach.svg" />
+  </div>
+</div>

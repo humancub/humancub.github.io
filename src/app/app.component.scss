@@ -1,0 +1,49 @@
+.main-grid {
+  font-family: "Quicksand", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+}
+
+.header-container {
+  display: grid;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding-right: 15px;
+}
+
+.info-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.topInfoStat {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.reach-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px;
+}
+
+.statistics-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 31px;
+  padding-bottom: 47px;
+}
+
+.dark-theme {
+  background-color: #212427;
+}
+
+.light-theme {
+  background-color: #eff3f9;
+}

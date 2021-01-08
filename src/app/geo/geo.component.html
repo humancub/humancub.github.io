@@ -1,0 +1,69 @@
+<div
+  [ngClass]="[
+    'geo-component',
+    theme === Theme.Dark ? 'dark-theme' : 'light-theme'
+  ]"
+>
+  <div class="info-geo">
+    <span class="title-geo">Geo</span>
+    <div class="data-geo">
+      <span class="country-geo">Country</span>
+      <span class="city-geo">City</span>
+    </div>
+  </div>
+
+  <div class="stat-geo">
+    <div class="left-side-geo">
+      <div class="russia-geo geo-stat">
+        <div class="percent-country">
+          <span class="country-geo">Russia</span>
+          <span class="percent-geo">94%</span>
+        </div>
+        <div class="gray-strip"></div>
+        <div class="purple strip-russia"></div>
+      </div>
+      <div class="ukraine-geo geo-stat">
+        <div class="percent-country">
+          <span class="country-geo">Ukraine</span>
+          <span class="percent-geo">0,20%</span>
+        </div>
+        <div class="gray-strip"></div>
+        <div class="purple strip-ukraine-usa"></div>
+      </div>
+      <div class="mongolia-geo geo-stat">
+        <div class="percent-country">
+          <span class="country-geo">Mongolia</span>
+          <span class="percent-geo">0,13%</span>
+        </div>
+        <div class="gray-strip"></div>
+        <div class="purple strip-mongolia"></div>
+      </div>
+    </div>
+    <div class="right-side-geo">
+      <div class="china-geo geo-stat">
+        <div class="percent-country">
+          <span class="country-geo">China</span>
+          <span class="percent-geo">0,26%</span>
+        </div>
+        <div class="gray-strip"></div>
+        <div class="purple strip-china"></div>
+      </div>
+      <div class="usa-geo geo-stat">
+        <div class="percent-country">
+          <span class="country-geo">USA</span>
+          <span class="percent-geo">0,20%</span>
+        </div>
+        <div class="gray-strip"></div>
+        <div class="purple strip-ukraine-usa"></div>
+      </div>
+      <div class="other-geo geo-stat">
+        <div class="percent-country">
+          <span class="country-geo">Other</span>
+          <span class="percent-geo">1,37%</span>
+        </div>
+        <div class="gray-strip"></div>
+        <div class="purple strip-other"></div>
+      </div>
+    </div>
+  </div>
+</div>
