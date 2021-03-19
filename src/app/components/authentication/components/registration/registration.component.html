@@ -1,0 +1,159 @@
+<div class="body">
+  <mat-card class="registration-card" [formGroup]="createForm">
+    <mat-card-title class="registration-title">Registration</mat-card-title>
+    <div class="row">
+      <div class="input-group">
+        <div class="set-input left-group">
+          <label class="label">First name</label>
+          <input class="input" type="text" [formControl]="controls.firstName" />
+          <mat-error
+            *ngIf="
+              controls.firstName.touched && controls.firstName.errors?.required
+            "
+            >First name cannot be empty</mat-error
+          >
+          <mat-error *ngIf="controls.firstName.errors?.lettersInputIsInvalid">
+            You can use only letters</mat-error
+          >
+        </div>
+      </div>
+      <div class="set-input right-group">
+        <label class="label">Last name</label>
+        <input class="input" type="text" [formControl]="controls.lastName" />
+        <mat-error
+          *ngIf="
+            controls.lastName.touched && controls.lastName.errors?.required
+          "
+          >Last name cannot be empty</mat-error
+        >
+        <mat-error *ngIf="controls.lastName.errors?.lettersInputIsInvalid">
+          You can use only letters</mat-error
+        >
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-group">
+        <div class="set-input left-group">
+          <label class="label">Your birthday</label>
+
+          <input [formControl]="controls.birthday" class="input" type="date" />
+          <mat-error
+            *ngIf="
+              controls.birthday.touched && controls.birthday.errors?.required
+            "
+            >Birthday cannot be empty</mat-error
+          >
+        </div>
+      </div>
+      <div class="set-input right-group">
+        <div class="gender-group">
+          <label class="label">Gender</label>
+          <div class="genders">
+            <mat-radio-group
+              class="radio-group"
+              [formControl]="controls.gender"
+            >
+              <mat-radio-button value="male" class="label male-gender-padding"
+                >Male</mat-radio-button
+              >
+              <mat-radio-button value="female" class="label"
+                >Female</mat-radio-button
+              >
+            </mat-radio-group>
+            <mat-error
+              *ngIf="
+                controls.gender.touched && controls.gender.errors?.required
+              "
+              >Gender mast be chosen</mat-error
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-group">
+        <div class="set-input left-group">
+          <label class="label">Email</label>
+          <input class="input" type="text" [formControl]="controls.email" />
+          <mat-error
+            *ngIf="controls.email.touched && controls.email.errors?.required"
+            >Email cannot be empty</mat-error
+          >
+          <mat-error
+            *ngIf="controls.email.touched && controls.email.errors?.email"
+            >Email is not valid</mat-error
+          >
+        </div>
+      </div>
+      <div class="set-input right-group">
+        <label class="label">Phone number</label>
+        <input class="input" type="text" [formControl]="controls.phoneNumber" />
+
+        <mat-error
+          *ngIf="
+            controls.phoneNumber.touched &&
+            controls.phoneNumber.errors?.required
+          "
+          >Phone number cannot be empty</mat-error
+        >
+        <mat-error
+          *ngIf="
+            controls.phoneNumber.touched &&
+            controls.phoneNumber.errors?.phoneNumberIsInvalid
+          "
+        >
+          Phone number is invalid</mat-error
+        >
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-group">
+        <div class="set-input left-group">
+          <label class="label">Create your username</label>
+          <input
+            class="input"
+            type="text"
+            [formControl]="controls.username"
+            pattern="^[a-zA-Z ]*$"
+          />
+          <mat-error
+            *ngIf="
+              controls.username.touched && controls.username.errors?.required
+            "
+            >Username cannot be empty</mat-error
+          >
+          <mat-error *ngIf="controls.username.errors?.lettersInputIsInvalid">
+            You can use only letters</mat-error
+          >
+        </div>
+      </div>
+      <div class="set-input right-group">
+        <label class="label">Your password</label>
+        <input class="input" type="text" [formControl]="controls.password" />
+
+        <mat-error
+          *ngIf="
+            controls.password.touched && controls.password.errors?.required
+          "
+          >Password must be created</mat-error
+        >
+      </div>
+    </div>
+
+    <div class="input-group">
+      <div class="button-section">
+        <button
+          class="button-submit"
+          type="submit"
+          routerLink="/main-page"
+          [disabled]="createForm.invalid"
+        >
+          Submit
+        </button>
+      </div>
+    </div>
+  </mat-card>
+</div>

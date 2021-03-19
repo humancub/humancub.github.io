@@ -1,0 +1,50 @@
+<div class="body">
+  <mat-card class="login">
+    <mat-card-title class="login-title">Login to your account</mat-card-title>
+    <mat-card-content [formGroup]="loginForm" (ngSubmit)="login()">
+      <input
+        class="input"
+        type="text"
+        placeholder="Email"
+        [formControl]="controls.email"
+      />
+      <mat-error
+        *ngIf="controls.email.touched && controls.email.errors?.required"
+        >Email cannot be empty</mat-error
+      >
+
+      <input
+        class="input"
+        type="password"
+        placeholder="Password"
+        [formControl]="controls.password"
+      />
+
+      <mat-error
+        class="mat-errors"
+        *ngIf="controls.password.touched && controls.password.errors?.required"
+        >Password cannot be empty</mat-error
+      >
+      <div class="button-log">
+        <button
+          mat-button
+          class="btn"
+          [disabled]="loginForm.invalid"
+          (click)="login()"
+        >
+          Login
+        </button>
+      </div>
+      <a
+        class="forgotten"
+        href="https://www.instagram.com/accounts/password/change/"
+      >
+        Forgot your password?
+      </a>
+      <a class="sign"
+        >Don`t have an account?
+        <a class="link-sign" routerLink="/registration"> Sign up!</a></a
+      >
+    </mat-card-content>
+  </mat-card>
+</div>
