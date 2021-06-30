@@ -17,7 +17,7 @@ export class LoginComponent implements OnInit {
   public controls = {
     email: this.loginForm.get('email'),
     password: this.loginForm.get('password'),
-  };
+  }
 
   constructor(
     private authenticationService: AuthenticationService,
@@ -35,7 +35,7 @@ export class LoginComponent implements OnInit {
           this.authenticationService.storeTokens(tokens);
           this.snackBar.open('Login was successfull', 'Undo');
           this.router.navigate(['/main-page']);
-          console.log('subsribe', tokens);
+          console.log('subscribe', tokens);
         },
         (error) => {
           this.snackBar.open(error.error.message, 'Undo');
